@@ -1,4 +1,4 @@
-namespace REngine.REngineTests
+namespace REngineTests
 {
     public class UnitTest1
     {

@@ -1,0 +1,13 @@
+C:\Users\quirkejx\Source\Repos\REngine\bin\Debug\net8.0\REngine.deps.json
+C:\Users\quirkejx\Source\Repos\REngine\bin\Debug\net8.0\REngine.dll
+C:\Users\quirkejx\Source\Repos\REngine\bin\Debug\net8.0\REngine.pdb
+C:\Users\quirkejx\Source\Repos\REngine\obj\Debug\net8.0\REngine.csproj.AssemblyReference.cache
+C:\Users\quirkejx\Source\Repos\REngine\obj\Debug\net8.0\REngine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\quirkejx\Source\Repos\REngine\obj\Debug\net8.0\REngine.csproj.CoreCompileInputs.cache
+C:\Users\quirkejx\Source\Repos\REngine\obj\Debug\net8.0\REngine.sourcelink.json
+C:\Users\quirkejx\Source\Repos\REngine\obj\Debug\net8.0\REngine.dll
+C:\Users\quirkejx\Source\Repos\REngine\obj\Debug\net8.0\refint\REngine.dll
+C:\Users\quirkejx\Source\Repos\REngine\obj\Debug\net8.0\REngine.pdb
+C:\Users\quirkejx\Source\Repos\REngine\obj\Debug\net8.0\ref\REngine.dll
+C:\Users\quirkejx\Source\Repos\REngine\bin\Debug\net8.0\res\TestSprite\SpriteData.json
+C:\Users\quirkejx\Source\Repos\REngine\bin\Debug\net8.0\res\TestSprite\spritesheet.png

@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using Raylib_cs;
 using REngine;
 using System.Security.Cryptography;
+
 namespace REngine.REngineTests {
 
 
@@ -132,7 +133,7 @@ public class REngineTests : REngineTestsBase
 
     [Fact]
     public void DrawTestSprites(){
-        var sprite = new Sprite(DataModel.LoadSpriteDataFromJSON("TestSprite/SpriteData.json"));
+        var sprite = new Sprite(DataModel.LoadSpriteDataFromJSON("res/TestSprite/SpriteData.json"));
         
         Renderer.RenderQueue.Enqueue(sprite);
 
