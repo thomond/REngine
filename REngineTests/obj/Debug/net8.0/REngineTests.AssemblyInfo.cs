@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("REngineTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd2cbb9bf295013a186456647fef01b8205e2541")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+690569715c331837856e30803bee42d674f72645")]
 [assembly: System.Reflection.AssemblyProductAttribute("REngineTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("REngineTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

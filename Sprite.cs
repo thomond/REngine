@@ -16,8 +16,18 @@ using System.Timers;
 [assembly: InternalsVisibleTo("SpriteViewer.Tests")]
 namespace REngine
 {
+    /// <summary>
+    /// Defines Physics relates data and ops such as collison, movement , gravity etc.
+    /// </summary>
+    public interface IPhysicsObject 
+    {
+        // Movement vector of controllable item
+        public Vector2 MovementVector { get; set; }
+        public Rectangle CollisionRect { get; set; }
+        public void Move();
 
-
+        public bool CollidesWith(IPhysicsObject other);
+    }
 
     public class Animation {
         
@@ -190,5 +200,50 @@ namespace REngine
             Raylib.DrawTextureV(BackingTexture, Position,Color.White);
             Raylib.EndTextureMode();
         }
+    }
+
+
+    public class Player : Sprite,IRenderable,IPhysicsObject
+    {
+        KeyboardControllable controller = new();
+        // Movement vector of controllable item
+        public Vector2 MovementVector { get; set; }
+        public Rectangle CollisionRect { get; set; }
+
+        public void Update()
+        {
+            base.Update(); // Process ani
+            InputAction input =  controller.GetNextInput();
+            switch (input)
+            {
+                case InputAction.Up:
+                    MovementVector = new Vector2(0,-1);
+                    break;
+                case InputAction.Down:
+                    MovementVector = new Vector2(0, 1);
+                    break;
+                case InputAction.Right:
+                    MovementVector = new Vector2(1, 0);
+                    break;
+                case InputAction.Left:
+                    MovementVector = new Vector2(-1, 0);
+                    break;
+                default:
+                    MovementVector = new Vector2(0, 0);
+                    break;
+            }
+                
+
+        }
+
+        public void Move()
+        {
+            Position += MovementVector; 
+        }
+
+        public bool CollidesWith(IPhysicsObject other)
+        {
+            return Raylib.CheckCollisionRecs(CollisionRect, other.CollisionRect);
+        } 
     }
 }
