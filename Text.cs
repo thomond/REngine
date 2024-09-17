@@ -8,7 +8,7 @@ public class Text : IRenderable
     
     public Vector2 Position {get;set;}
     public Vector2 Dimensions {get => Raylib.MeasureTextEx(font,text,Size,1.0f);}
-    private String text;
+    public String text;
     public int Size;
     public Color Color = Color.White;
     private Font font = Raylib.GetFontDefault();

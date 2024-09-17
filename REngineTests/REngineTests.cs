@@ -27,28 +27,15 @@ public class REngineTests : REngineTestsBase
     
 
 
-    [Fact]
-    public void DeserializeJSONFromFileTest()
-    {
-        var json = File.ReadAllText("TestSprite/SpriteData.json");
-        var values = Newtonsoft.Json.JsonConvert.DeserializeObject<DataModel.SpriteEntity>(json);
-        var info = values;
-        
-        Assert.True( info.frameRow==0
-        && info.textureFilename == "TestSprite/spritesheet.png"
-        && info.dimensions.w==32
-        && info.dimensions.h==48
-        && info.animations[0].name=="walk_down", "Object does not match JSON");
-    }
 
     [Fact]
     public void CreateSpriteFromJSONTest()
     {
         // Windows must be inited so OpenGL context is created
         Raylib.InitWindow(0,0, "-"); 
-        var spriteMeta = DataModel.LoadSpriteDataFromJSON("TestSprite/SpriteData.json");
+        var spriteMeta = DataModel.LoadSpriteDataFromJSON(Path.Combine("res", "TestSprite"));
         Assert.True( spriteMeta.frameRow==0
-        && spriteMeta.textureFilename == "TestSprite/spritesheet.png"
+        && spriteMeta.textureFilename == "spritesheet.png"
         && spriteMeta.dimensions.w==32
         && spriteMeta.dimensions.h==48
         && spriteMeta.animations[0].name=="walk_down", "Object does not match JSON");
@@ -58,6 +45,22 @@ public class REngineTests : REngineTestsBase
         Assert.True(sprite.Animation.Frames[0]==new Vector2(0,0));
     }
 
+    [Fact]
+    public void CreateSpriteFromPathTest()
+    {
+        // Windows must be inited so OpenGL context is created
+        Raylib.InitWindow(0, 0, "-");
+        var spriteMeta = DataModel.LoadSpriteDataFromPath(Path.Combine("res","TestSprite"));
+        Assert.True(spriteMeta.frameRow == 0
+        && spriteMeta.textureFilename == "spritesheet.png"
+        && spriteMeta.dimensions.w == 32
+        && spriteMeta.dimensions.h == 48
+        && spriteMeta.animations[0].name == "walk_down", "Object does not match JSON");
+
+        Sprite sprite = new Sprite(spriteMeta);
+        Assert.True(sprite.Animation.Name == "walk_down");
+        Assert.True(sprite.Animation.Frames[0] == new Vector2(0, 0));
+    }
     [Fact]
     public void CreateSpriteTest()
     {
@@ -146,5 +149,20 @@ public class REngineTests : REngineTestsBase
 
     }
 
+    [Fact]
+    public void ControllerTest()
+    {
+            KeyboardControllable kb = new();
+            Text text = new("", new Vector2(Raylib.GetScreenWidth()/2, Raylib.GetScreenWidth() / 2), Color.Orange,20);
+            Renderer.RenderQueue.Enqueue(text);
+
+            while (!Raylib.WindowShouldClose())
+            {
+                InputAction act =  kb.GetNextInput();
+                text.text = act.ToString();
+                Renderer.Draw();
+            }
+                
+    }    
 }
 }

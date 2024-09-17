@@ -218,15 +218,19 @@ namespace REngine
             {
                 case InputAction.Up:
                     MovementVector = new Vector2(0,-1);
+                    SetAnimation("walk_up");
                     break;
                 case InputAction.Down:
                     MovementVector = new Vector2(0, 1);
+                    SetAnimation("walk_down");
                     break;
                 case InputAction.Right:
                     MovementVector = new Vector2(1, 0);
+                    SetAnimation("walk_right");
                     break;
                 case InputAction.Left:
                     MovementVector = new Vector2(-1, 0);
+                    SetAnimation("walk_left");
                     break;
                 default:
                     MovementVector = new Vector2(0, 0);

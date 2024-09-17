@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\john\\Source\\Repos\\REngine\\REngineTests\\REngineTests.csproj": {}
+    "C:\\Users\\quirkejx\\source\\repos\\REngine\\REngineTests\\REngineTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\john\\Source\\Repos\\REngine\\REngine.csproj": {
+    "C:\\Users\\quirkejx\\source\\repos\\REngine\\REngine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\john\\Source\\Repos\\REngine\\REngine.csproj",
+        "projectUniqueName": "C:\\Users\\quirkejx\\source\\repos\\REngine\\REngine.csproj",
         "projectName": "REngine",
-        "projectPath": "C:\\Users\\john\\Source\\Repos\\REngine\\REngine.csproj",
-        "packagesPath": "C:\\Users\\john\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\john\\source\\repos\\REngine\\obj\\",
+        "projectPath": "C:\\Users\\quirkejx\\source\\repos\\REngine\\REngine.csproj",
+        "packagesPath": "C:\\Users\\quirkejx\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\quirkejx\\source\\repos\\REngine\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\john\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\quirkejx\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -74,17 +78,21 @@
         }
       }
     },
-    "C:\\Users\\john\\Source\\Repos\\REngine\\REngineTests\\REngineTests.csproj": {
+    "C:\\Users\\quirkejx\\source\\repos\\REngine\\REngineTests\\REngineTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\john\\Source\\Repos\\REngine\\REngineTests\\REngineTests.csproj",
+        "projectUniqueName": "C:\\Users\\quirkejx\\source\\repos\\REngine\\REngineTests\\REngineTests.csproj",
         "projectName": "REngineTests",
-        "projectPath": "C:\\Users\\john\\Source\\Repos\\REngine\\REngineTests\\REngineTests.csproj",
-        "packagesPath": "C:\\Users\\john\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\john\\source\\repos\\REngine\\REngineTests\\obj\\",
+        "projectPath": "C:\\Users\\quirkejx\\source\\repos\\REngine\\REngineTests\\REngineTests.csproj",
+        "packagesPath": "C:\\Users\\quirkejx\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\quirkejx\\source\\repos\\REngine\\REngineTests\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\john\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\quirkejx\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -98,8 +106,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\john\\Source\\Repos\\REngine\\REngine.csproj": {
-                "projectPath": "C:\\Users\\john\\Source\\Repos\\REngine\\REngine.csproj"
+              "C:\\Users\\quirkejx\\source\\repos\\REngine\\REngine.csproj": {
+                "projectPath": "C:\\Users\\quirkejx\\source\\repos\\REngine\\REngine.csproj"
               }
             }
           }
@@ -121,23 +129,27 @@
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[17.8.0, )"
+              "version": "[17.11.1, )"
             },
             "Raylib-cs": {
               "target": "Package",
               "version": "[6.1.1, )"
             },
             "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[6.0.2, )"
             },
             "xunit": {
               "target": "Package",
-              "version": "[2.5.3, )"
+              "version": "[2.9.0, )"
             },
             "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[2.5.3, )"
+              "version": "[2.8.2, )"
             }
           },
           "imports": [

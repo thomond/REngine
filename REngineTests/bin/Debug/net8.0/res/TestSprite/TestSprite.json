@@ -1,7 +1,7 @@
 {
     "dimensions": {"w": 32, "h": 48},
       "row": 0,
-      "textureFilename":"TestSprite/spritesheet.png",
+      "textureFilename":"spritesheet.png",
       "Animations": [{
         "frameIndices": [
           0,

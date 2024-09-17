@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\john\\Source\\Repos\\REngine\\REngine.csproj": {}
+    "C:\\Users\\quirkejx\\source\\repos\\REngine\\REngine.csproj": {}
   },
   "projects": {
-    "C:\\Users\\john\\Source\\Repos\\REngine\\REngine.csproj": {
+    "C:\\Users\\quirkejx\\source\\repos\\REngine\\REngine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\john\\Source\\Repos\\REngine\\REngine.csproj",
+        "projectUniqueName": "C:\\Users\\quirkejx\\source\\repos\\REngine\\REngine.csproj",
         "projectName": "REngine",
-        "projectPath": "C:\\Users\\john\\Source\\Repos\\REngine\\REngine.csproj",
-        "packagesPath": "C:\\Users\\john\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\john\\source\\repos\\REngine\\obj\\",
+        "projectPath": "C:\\Users\\quirkejx\\source\\repos\\REngine\\REngine.csproj",
+        "packagesPath": "C:\\Users\\quirkejx\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\quirkejx\\source\\repos\\REngine\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\john\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\quirkejx\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

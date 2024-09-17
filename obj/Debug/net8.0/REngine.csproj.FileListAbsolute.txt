@@ -9,5 +9,5 @@ C:\Users\quirkejx\Source\Repos\REngine\obj\Debug\net8.0\REngine.dll
 C:\Users\quirkejx\Source\Repos\REngine\obj\Debug\net8.0\refint\REngine.dll
 C:\Users\quirkejx\Source\Repos\REngine\obj\Debug\net8.0\REngine.pdb
 C:\Users\quirkejx\Source\Repos\REngine\obj\Debug\net8.0\ref\REngine.dll
-C:\Users\quirkejx\Source\Repos\REngine\bin\Debug\net8.0\res\TestSprite\SpriteData.json
 C:\Users\quirkejx\Source\Repos\REngine\bin\Debug\net8.0\res\TestSprite\spritesheet.png
+C:\Users\quirkejx\source\repos\REngine\bin\Debug\net8.0\res\TestSprite\TestSprite.json

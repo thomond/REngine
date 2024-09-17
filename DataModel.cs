@@ -21,6 +21,7 @@ namespace REngine
             public List<AnimationEntity> animations { get; set; }
             
             public string textureFilename { get; set; }
+            
         }
         
         public static SpriteEntity LoadSpriteDataFromJSON(String JSONFile){
@@ -37,7 +38,26 @@ namespace REngine
         }
         
         
+        }
+
+        public static SpriteEntity LoadSpriteDataFromPath(String path)
+        {
+            try
+            {
+                string dirname = (path.Split(Path.DirectorySeparatorChar))[^1];
+
+                var json = File.ReadAllText(Path.Combine(path,dirname)+".json");
+                var values = Newtonsoft.Json.JsonConvert.DeserializeObject<SpriteEntity>(json);
+                return values;
+            }
+            catch (System.Exception e)
+            {
+                Console.WriteLine(e.Message);
+                throw;
+            }
+
+
+        }
     }
-}
 
 }

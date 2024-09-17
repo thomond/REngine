@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="res\TestSprite\SpriteData.json">
+    <None Update="res\TestSprite\TestSprite.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="res\TestSprite\spritesheet.png">
