@@ -4,6 +4,7 @@
 
 /.vs/REngine
 /.vs
-/obj/Release/net8.0
-/REngineTests/bin/Release/net8.0
-/REngineTests/obj/Release/net8.0
+/obj
+/bin
+/REngineTests/bin
+/REngineTests/obj
